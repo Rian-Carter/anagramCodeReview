@@ -16,4 +16,9 @@ describe ('Anagram_Checker') do
     yellow = Anagram_Checker.new('Brr', 'Try')
     expect(yellow.anagram()).to(eq("Please enter a real word."))
   end
+
+  it('should check to see if there are no match letters and determine if antigram') do
+    green = Anagram_Checker.new('analyze', 'word')
+    expect(green.anagram()).to(eq("There are no matching letters. Looks like you have an antigram!"))
+  end
 end
