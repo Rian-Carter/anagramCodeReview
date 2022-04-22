@@ -11,13 +11,13 @@ class Anagram_Checker
     array2 = @word2.downcase.split("")
     vowels = ['a','e','i','o','u','y']
     
-    if array1.all? { |array1| array2.include?(array1) } === true
+    if array1.any? { |array1| array2.include?(array1) } === false
+    return "There are no matching letters. Looks like you have an antigram!"
+    elsif array1.all? { |array1| array2.include?(array1) } === true
+    # binding.pry
     return "Success! These words are anagrams!"
-    elsif array1.include?(vowels) === false || array2.indlude?(vowels) === false
-      return "Please enter a real word."
-      binding.pry
-    else
-      "Looks like you have an antigram"
+    else array1.include?(vowels) === false || array2.include?(vowels) === false
+    return "Please enter a real word."
     end
   end
 end
