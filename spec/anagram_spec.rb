@@ -21,4 +21,9 @@ describe ('Anagram_Checker') do
     green = Anagram_Checker.new('analyze', 'word')
     expect(green.anagram()).to(eq("There are no matching letters. Looks like you have an antigram!"))
   end
+
+  it('checks multiple words are anagrams or antigrams') do
+    purple = Anagram_Checker.new('The Morse Code', 'Here come dots')
+    expect(purple.anagram()).to(eq("Success! These words are anagrams!"))
+  end
 end
