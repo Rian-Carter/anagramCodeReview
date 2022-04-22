@@ -27,4 +27,9 @@ describe ('Anagram_Checker') do
     expect(purple.anagram()).to(eq("Success! These words are anagrams!"))
   end
 
+  it('checks multiple words are antigrams') do
+    purple = Anagram_Checker.new('Tip Top', 'Adheres')
+    expect(purple.anagram()).to(eq("There are no matching letters. Looks like you have an antigram!"))
+  end
+
 end
