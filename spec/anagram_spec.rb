@@ -13,7 +13,7 @@ describe ('Anagram_Checker') do
   end
 
   it('should check to see if word1 or word2 contains vowel(s)') do
-    yellow = Anagram_Checker.new('Brr', 'Try')
+    yellow = Anagram_Checker.new('Brr', 'Trr')
     expect(yellow.anagram()).to(eq("Please enter a real word."))
   end
 
