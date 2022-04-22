@@ -34,6 +34,11 @@ describe ('Anagram_Checker') do
 
   it('checks if user enters multiple words if they are actual words') do
     pink = Anagram_Checker.new('Grg Bsh', 'George Bush')
-    expect(pink.anagram).to(eq("Please enter a real word"))
+    expect(pink.anagram).to(eq("Please enter a real word."))
   end
+
+  # it('check if a user enters an integer') do
+  #   white = Anagram_Checker.new('1', '2')
+  #   expect(white.anagram).to(eq("please"))
+  # end
 end
