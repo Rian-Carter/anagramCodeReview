@@ -6,8 +6,14 @@ describe ('Anagram_Checker') do
     red = Anagram_Checker.new('ailed', 'ideal')
     expect(red.anagram()).to(eq("Success! These words are anagrams!"))
   end
+
   it('should take in 2 words and check if case sensitivity affects anagram_checker') do
     blue = Anagram_Checker.new('Dog', 'God')
     expect(blue.anagram()).to(eq("Success! These words are anagrams!"))
+  end
+
+  it('should check to see if word1 contains vowel(s)') do
+    yellow = Anagram_Checker.new('Brr', 'Try')
+    expect(yellow.anagram()).to(eq("Please enter a real word."))
   end
 end
