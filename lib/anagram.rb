@@ -9,13 +9,16 @@ class Anagram_Checker
   def anagram
     array1 = @word1.downcase.split("")
     array2 = @word2.downcase.split("")
+    vowels = ['a','e','i','o','u','y']
     
-    # binding.pry
-    if array1.any? { |array1|array2.include?(array1) } == true
+    if array1.all? { |array1| array2.include?(array1) } === true
     return "Success! These words are anagrams!"
-  elsif
-    "These are not anagrams"
-  end
+    elsif array1.include?(vowels) === false || array2.indlude?(vowels) === false
+      return "Please enter a real word."
+      binding.pry
+    else
+      "Looks like you have an antigram"
+    end
   end
 end
 
