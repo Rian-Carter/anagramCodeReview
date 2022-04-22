@@ -28,8 +28,12 @@ describe ('Anagram_Checker') do
   end
 
   it('checks multiple words are antigrams') do
-    purple = Anagram_Checker.new('Tip Top', 'Adheres')
-    expect(purple.anagram()).to(eq("There are no matching letters. Looks like you have an antigram!"))
+    black = Anagram_Checker.new('Tip Top', 'Adheres')
+    expect(black.anagram()).to(eq("There are no matching letters. Looks like you have an antigram!"))
   end
 
+  it('checks if user enters multiple words if they are actual words') do
+    pink = Anagram_Checker.new('Grg Bsh', 'George Bush')
+    expect(pink.anagram).to(eq("Please enter a real word"))
+  end
 end
