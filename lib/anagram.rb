@@ -7,10 +7,17 @@ class Anagram_Checker
   end
 
   def anagram
-    array1 = @word1.split("")
-    array2 = @word2.split("")
-binding.pry
-    array1.include?(array2)
+    array1 = @word1.downcase.split("")
+    array2 = @word2.downcase.split("")
+    
+    # binding.pry
+    if array1.any? { |array1|array2.include?(array1) } == true
     return "Success! These words are anagrams!"
+  elsif
+    "These are not anagrams"
+  end
   end
 end
+
+
+
