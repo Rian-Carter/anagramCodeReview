@@ -26,6 +26,7 @@ describe ('Anagram_Checker') do
     purple = Anagram_Checker.new('The Morse Code', 'Here come dots')
     expect(purple.anagram()).to(eq("Success! These words are anagrams!"))
   end
+  
   it('check to see if multiple words are anagrams') do
     black = Anagram_Checker.new('a gentleman', 'elegant man')
     expect(black.anagram()).to(eq("Success! These words are anagrams!"))
