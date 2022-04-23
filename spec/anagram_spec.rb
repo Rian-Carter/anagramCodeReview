@@ -1,6 +1,5 @@
 require('rspec')
 require('anagram')
-# require('palindrome?')
 
 describe ('Anagram_Checker#anagram') do
   it('checks to see if two words are anagrams') do
