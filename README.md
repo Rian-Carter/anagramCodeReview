@@ -14,7 +14,7 @@
 * RSPEC
 * pry
 
-## This application will take 2 inputs from a user and return if they are or are not anagrams.
+## This application will take 2 inputs from a user and return if they are or are not anagrams. In addition it will also check to see if either of the inputs are palindromes.
 
 ## Setup/Installation Requirements
 
