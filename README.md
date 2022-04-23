@@ -6,7 +6,7 @@
 
 ## Link to Anagram Checker
 
-* https://github.com/Rian-Carter/anagramCodeReview
+* https://github.com/Rian-Carter/anagramCodeReview.git
 
 ## Technologies Used
 
@@ -21,9 +21,9 @@
 * Clone this project using $ git clone https://github.com/Rian-Carter/anagramCodeReview.git
 * Open in a text editor (VS Code)
 * Open your terminal 
-* Run command 'bundle'
-* Run command 'rspec' to see tests passing
-* Run command 'ruby anagram_script.rb" to be able to enter input and get results
+* In the terminal run command 'bundle'
+* In the terminal run command 'rspec' to see tests passing
+* In the terminal run command 'ruby anagram_script.rb" to be able to enter input and get results
 
 ## Known Bugs
 
