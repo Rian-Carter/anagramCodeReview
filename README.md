@@ -28,7 +28,7 @@
 ## Known Bugs
 
 * There are no known bugs at this time
-* Please forward any bugs to R.C**t**8*@ho***il.com
+* Please forward any bugs to R.C@rt3%8*@ho***il.com
 
 ## License
 
