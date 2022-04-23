@@ -14,7 +14,7 @@ describe ('Anagram_Checker#anagram') do
   end
 
   it('should check to see if word1 or word2 contains vowel(s)') do
-    yellow = Anagram_Checker.new('Brr', 'Trr')
+    yellow = Anagram_Checker.new('Brr', 'Grr')
     expect(yellow.anagram()).to(eq("Please enter a real word."))
   end
 
@@ -37,11 +37,16 @@ describe ('Anagram_Checker#anagram') do
     pink = Anagram_Checker.new('Grg Bsh', 'George Bush')
     expect(pink.anagram).to(eq("Please enter a real word."))
   end
+end
+  
+  describe('Anagram_Checker#palindrome') do
+  it('should check if word1 is a palindrome') do
+    brown = Anagram_Checker.new('racecar', 'pillow')
+    expect(brown.palindrome()).to(eq('Word1 is a palindrome'))
+  end
 
-  # describe('Anagram_Checker#palindrome?') do
-  #   it('should check if either of the inputted words are palindromes') do
-  #     brown = Anagram_Checker.new('racecar', 'deified')
-  #     expect(brown.palindrome).to(eq('suck'))
-  #   end
-  # end
+  it('should check if word2 is a palindrome') do
+    magenta = Anagram_Checker.new('pillow', 'deified')
+    expect(magenta.palindrome()).to(eq('Word2 is a palindrome'))
+  end
 end
