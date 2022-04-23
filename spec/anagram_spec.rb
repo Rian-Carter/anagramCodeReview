@@ -42,11 +42,6 @@ end
   describe('Anagram_Checker#palindrome') do
   it('should check if word1 is a palindrome') do
     brown = Anagram_Checker.new('racecar', 'pillow')
-    expect(brown.palindrome()).to(eq('Word1 is a palindrome'))
-  end
-
-  it('should check if word2 is a palindrome') do
-    magenta = Anagram_Checker.new('pillow', 'deified')
-    expect(magenta.palindrome()).to(eq('Word2 is a palindrome'))
+    expect(brown.palindrome()).to(eq('You entered a palindrome'))
   end
 end
