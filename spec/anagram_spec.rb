@@ -1,7 +1,8 @@
 require('rspec')
 require('anagram')
+# require('palindrome?')
 
-describe ('Anagram_Checker') do
+describe ('Anagram_Checker#anagram') do
   it('checks to see if two words are anagrams') do
     red = Anagram_Checker.new('ailed', 'ideal')
     expect(red.anagram()).to(eq("Success! These words are anagrams!"))
@@ -36,4 +37,11 @@ describe ('Anagram_Checker') do
     pink = Anagram_Checker.new('Grg Bsh', 'George Bush')
     expect(pink.anagram).to(eq("Please enter a real word."))
   end
+
+  # describe('Anagram_Checker#palindrome?') do
+  #   it('should check if either of the inputted words are palindromes') do
+  #     brown = Anagram_Checker.new('racecar', 'deified')
+  #     expect(brown.palindrome).to(eq('suck'))
+  #   end
+  # end
 end
